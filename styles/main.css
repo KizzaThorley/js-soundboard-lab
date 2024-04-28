@@ -1,7 +1,7 @@
 body {
   max-width: 500px;
   margin: 0 auto;
-  background-color: #fafafa;
+  background-color: rgb(152, 0, 0);
   font-family: 'Exo 2', sans-serif;
   display: flex;
   justify-content: center;
@@ -26,19 +26,23 @@ body {
 }
 
 #player div:hover {
-  background-color: black;
-  color: white;
+  background-color: rgb(22, 0, 224);
+  color: rgb(0, 0, 0);
 }
 
 #randomizer {
   margin-top: 30px;
-  padding: 20px;
-  background-color: rgb(204, 204, 204);
+  padding: 40px;
+  background-color: rgb(47, 40, 247);
   border: 2px solid black;
   font-family: 'Exo 2', sans-serif;
 }
 
 #randomizer:hover {
-  background-color: black;
-  color: white;
+  background-color: rgb(22, 0, 224);
+  color: black;
+}
+
+.clicked-button {
+  color: green
 }

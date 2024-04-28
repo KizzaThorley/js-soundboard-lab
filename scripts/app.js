@@ -42,7 +42,7 @@ const play = (event) => {
         clickedSound = event.target.id
         currentAudio.src = `./sounds/${clickedSound}.wav`
         currentAudio.play()
-        console.log(event.target.id);
+        // console.log(event.target.id);
     }
 }
 
@@ -51,6 +51,17 @@ const randomSound = (event) => {
     const randomSound = soundBits[randomIdx]
     currentAudio.src = `./sounds/${randomSound}.wav`
     currentAudio.play()
+   
+//     const colorButton = (event) => {
+//         const buttonClicked = randomSound
+//         console.log(buttonClicked); 
+//         const buttonCss = document.getElementById(randomSound).style.backgroundColor.toggle = "green"
+       
+//     colorButton(event)
+// }
+// playedButtonColor = document.getElementById(randomSound).style.backgroundColor = 'green' 
+// document.getElementById.toggle
+// get buttons to turn green but stay green.
 }
 // const run = (event) => {
 // console.log(event)
@@ -63,7 +74,18 @@ const randomSound = (event) => {
 
 // }
 
+// const colorButton = (event) => {
+//     const buttonClicked = soundBits[randomIdx]
+//     console.log(buttonClicked); 
+//     const buttonCss = document.getElementById(`${buttonClicked}`).style.backgroundColor = "green"
+//  console.log(buttonCss);   
+//  buttonCss.add('clicked-buttton')
+//  buttonCss.toggleAttribute('green')
+// }
+// document.getElementById().style.property
+
 // /*----------------------------- Event Listeners -----------------------------*/
 
 allButtons.addEventListener('click', play)
 randomButton.addEventListener('click', randomSound)
+// allButtons.addEventListener('click', colorButton)
